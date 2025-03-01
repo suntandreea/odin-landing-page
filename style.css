@@ -113,3 +113,55 @@ a:hover {
     color: var(--white);
   }
 }
+
+/* SECTIONS */
+
+.section {
+  padding-block: 2rem;
+  & > * {
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+}
+
+.section--gray {
+  background: var(--gray);
+}
+
+/* INFO SECTION */
+
+.info {
+  padding-bottom: 3rem;
+}
+
+.info__title {
+  font-size: var(--font-l);
+  font-weight: 900;
+  text-align: center;
+  margin-block: 0 2rem;
+}
+
+.info__items {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.item {
+  flex: auto;
+  max-width: 10rem;
+}
+
+.item__image {
+  width: 100%;
+  height: 10rem;
+  border: 0.2rem solid var(--blue);
+  border-radius: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.item__description {
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+}
