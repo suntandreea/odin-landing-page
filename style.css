@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+/* BOILERPLATE */
+
+:root {
+  --navy: #1f2937;
+  --blue: #3882f6;
+  --white: #f9faf8;
+  --gray: #e5e7eb;
+
+  --font-xl: 3rem; /* 48px */
+  --font-l: 2.25rem; /* 36px */
+  --font-m: 1.5rem; /* 24px */
+  --font-s: 1.125rem; /* 18px */
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
