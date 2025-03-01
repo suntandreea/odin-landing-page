@@ -103,6 +103,8 @@ a:hover {
   flex: 1;
 }
 
+/* LINK */
+
 .link {
   display: inline-block;
   background: var(--blue);
@@ -112,6 +114,10 @@ a:hover {
   a {
     color: var(--white);
   }
+}
+
+.link--border {
+  border: 1px solid var(--white);
 }
 
 /* SECTIONS */
@@ -190,4 +196,31 @@ a:hover {
   cite {
     font-style: normal;
   }
+}
+
+/* CARD SECTION */
+
+.card {
+  margin-block: 3rem;
+  background: var(--blue);
+  border-radius: 0.4rem;
+  padding: 2rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__title {
+  color: var(--white);
+  font-size: var(--font-m);
+  margin-block: 0;
+}
+
+.card__text {
+  color: var(--gray);
+  margin-block: 0;
+}
+
+.card__cta {
+  flex-shrink: 0;
 }
