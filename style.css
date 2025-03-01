@@ -224,3 +224,18 @@ a:hover {
 .card__cta {
   flex-shrink: 0;
 }
+
+/* FOOTER */
+
+.footer {
+  background: var(--navy);
+  color: var(--gray);
+  padding-block: 2rem;
+}
+
+.copy {
+  max-width: var(--max);
+  margin: 0 auto;
+  margin-block: 0;
+  text-align: center;
+}
