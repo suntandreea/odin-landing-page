@@ -165,3 +165,29 @@ a:hover {
   text-align: center;
   color: #333;
 }
+
+/* QUOTE SECTION */
+
+.quote {
+  padding: 2rem 8rem;
+}
+
+.quote__text {
+  margin: 0;
+  font-size: var(--font-l);
+  font-weight: lighter;
+  font-style: italic;
+
+  p {
+    margin: 0;
+  }
+}
+
+.quote__source {
+  text-align: right;
+  font-weight: 700;
+
+  cite {
+    font-style: normal;
+  }
+}
