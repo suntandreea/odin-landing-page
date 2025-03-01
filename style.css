@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
 
 /* BOILERPLATE */
 
@@ -12,6 +12,8 @@
   --font-l: 2.25rem; /* 36px */
   --font-m: 1.5rem; /* 24px */
   --font-s: 1.125rem; /* 18px */
+
+  --max: 1000px;
 }
 
 html {
@@ -19,7 +21,9 @@ html {
   font-size: 100%;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -27,4 +31,85 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  color: var(--gray);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* HEADER */
+
+.header {
+  background: var(--navy);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding-block: 0.6rem;
+}
+
+.menu__logo {
+  font-size: var(--font-m);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.menu__items {
+  display: flex;
+  gap: 2rem;
+  font-size: var(--font-s);
+}
+
+.hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding-block: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero__content {
+  flex: 1;
+}
+
+.hero__title {
+  font-size: var(--font-xl);
+  font-weight: 900;
+  margin-block: 0;
+  color: var(--white);
+}
+
+.hero__text {
+  color: var(--gray);
+  font-size: var(--font-s);
+  margin-block: 0.8rem;
+}
+
+.hero__image {
+  background: var(--gray) url("https://picsum.photos/600") center no-repeat;
+  background-size: cover;
+  flex: 1;
+}
+
+.link {
+  display: inline-block;
+  background: var(--blue);
+  padding: 0.5rem 2rem;
+  border-radius: 0.4rem;
+
+  a {
+    color: var(--white);
+  }
 }
